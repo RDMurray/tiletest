@@ -1,3 +1,4 @@
+# code copyed from https://wiki.openstreetmap.org/wiki/Osmosis/Polygon_Filter_File_Python_Parsing
 import shapely
 
 def parse_poly(lines):
