@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 requests = "*"
 shapely = "*"
+aiopg = "*"
 
 [dev-packages]
 
