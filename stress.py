@@ -39,7 +39,8 @@ def writeFile(x,y, text):
 
 
 
-poly = parse_poly(open('great-britain.poly','r').readlines())
+#poly = parse_poly(open('great-britain.poly','r').readlines())
+poly = parse_poly(open('europe.poly','r').readlines())
 poly=poly.buffer(0.003)
 bounds=poly.bounds
 tileTL = osm_deg2num(bounds[3],bounds[0], 16)
