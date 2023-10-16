@@ -44,7 +44,7 @@ poly=poly.buffer(0.003)
 bounds=poly.bounds
 tileTL = osm_deg2num(bounds[3],bounds[0], 16)
 tileBR=osm_deg2num(bounds[1],bounds[2],16)
-#for testing
+count=0
 for i in range(10000):
     if i%100 == 0:
         print(i)
@@ -54,6 +54,10 @@ for i in range(10000):
     if not (poly.contains(p)):
         continue
     text=downloadTile(x,y)
+    if len(text) >=46:
+        count += 1
+
+print(count)
 
 
 
